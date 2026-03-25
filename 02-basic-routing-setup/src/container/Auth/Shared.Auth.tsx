@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Paper, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export const StyledContaine = styled(Paper)`
   width: 350px;
@@ -17,4 +18,8 @@ export const StyledAuthFooter = styled(Box)`
   flex-direction: column;
   margin-bottom: 20px;
   align-items: center;
+`;
+
+export const StyledLink = styled(Link)`
+  cursor: pointer;
 `;

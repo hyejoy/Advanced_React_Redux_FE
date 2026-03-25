@@ -1,11 +1,13 @@
-import { Button, Link, TextField, Typography } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import {
+  StyledAuthFooter,
   StyledContaine,
   StyledInputBox,
-  StyledAuthFooter,
+  StyledLink,
 } from "./Shared.Auth";
 
 function Signin() {
+  // const navigate = useNavigate();
   return (
     <StyledContaine>
       <Typography variant="h4">Sign in</Typography>
@@ -28,7 +30,7 @@ function Signin() {
         </Button>
         <Typography>
           Create a new account
-          <Link>here</Link>
+          <StyledLink to={"/signup"}>here</StyledLink>
         </Typography>
       </StyledAuthFooter>
     </StyledContaine>

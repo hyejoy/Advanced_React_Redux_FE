@@ -1,8 +1,9 @@
-import { Button, Link, TextField, Typography } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 import {
   StyledAuthFooter,
   StyledContaine,
   StyledInputBox,
+  StyledLink,
 } from "./Shared.Auth";
 
 function Signup() {
@@ -28,7 +29,7 @@ function Signup() {
         </Button>
         <Typography>
           Sign in to existing account
-          <Link>here</Link>
+          <StyledLink to={"/signin"}>here</StyledLink>
         </Typography>
       </StyledAuthFooter>
     </StyledContaine>
