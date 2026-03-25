@@ -1,24 +1,11 @@
-import styled from "@emotion/styled";
-import { Box, Button, Paper, TextField, Typography, Link } from "@mui/material";
+import { Button, Link, TextField, Typography } from "@mui/material";
+import {
+  StyledContaine,
+  StyledInputBox,
+  StyledAuthFooter,
+} from "./Shared.Auth";
 
-export default function Signin() {
-  const StyledContaine = styled(Paper)`
-    width: 350px;
-    padding: 20px;
-  `;
-
-  const StyledInputBox = styled(Box)`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  `;
-  const StyledAuthFooter = styled(Box)`
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    align-items: center;
-  `;
-
+function Signin() {
   return (
     <StyledContaine>
       <Typography variant="h4">Sign in</Typography>
@@ -47,3 +34,5 @@ export default function Signin() {
     </StyledContaine>
   );
 }
+
+export default Signin;

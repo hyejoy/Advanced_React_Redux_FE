@@ -1,7 +1,38 @@
-export default function Signup() {
+import { Button, Link, TextField, Typography } from "@mui/material";
+import {
+  StyledAuthFooter,
+  StyledContaine,
+  StyledInputBox,
+} from "./Shared.Auth";
+
+function Signup() {
   return (
-    <>
-      <h1>Signup Component</h1>
-    </>
+    <StyledContaine>
+      <Typography variant="h4">Sign Up</Typography>
+      <Typography sx={{ marginBottom: 3 }} variant="body1">
+        Set credentials to Signup
+      </Typography>
+
+      <StyledInputBox>
+        <TextField
+          sx={{ marginBottom: 3 }}
+          variant="standard"
+          placeholder="Emial"
+        />
+        <TextField variant="standard" placeholder="Password" type="password" />
+      </StyledInputBox>
+
+      <StyledAuthFooter>
+        <Button sx={{ marginBottom: 2 }} variant="contained">
+          Sign Up
+        </Button>
+        <Typography>
+          Sign in to existing account
+          <Link>here</Link>
+        </Typography>
+      </StyledAuthFooter>
+    </StyledContaine>
   );
 }
+
+export default Signup;
